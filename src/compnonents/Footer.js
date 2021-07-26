@@ -55,7 +55,7 @@ const Footer = () => {
                                         <div className="module-body">
                                              <ul className='list-unstyled'>
                                                   <li className="first"><Link to="#" title="Contact us">My Account</Link></li>
-                                                  <li><Link to="#" title="About us">Order History</Link></li>
+                                                  <li><Link to="/trackorder" title="About us">Order History</Link></li>
                                                   <li><Link to="#" title="faq">FAQ</Link></li>
                                                   <li><Link to="#" title="Popular Searches">Specials</Link></li>
                                                   <li className="last"><Link to="#" title="Where is my order?">Help Center</Link></li>
@@ -74,7 +74,7 @@ const Footer = () => {
                                                   <li><Link title="Information" to="#">Customer Service</Link></li>
                                                   <li><Link title="Addresses" to="#">Company</Link></li>
                                                   <li><Link title="Addresses" to="#">Investor Relations</Link></li>
-                                                  <li className="last"><Link title="Orders History" to="#">Advanced Search</Link></li>
+                                                  <li className="last"><Link title="Orders History" to="">Advanced Search</Link></li>
                                              </ul>
                                         </div>
                                    </div>

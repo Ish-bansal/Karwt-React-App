@@ -29,10 +29,10 @@ const NavBar = () => {
       <div className="cnt-account">
         <ul className="list-unstyled">
           <li><Link className="lolo" to="#"><i className="icon fa fa-user"></i>My Account</Link></li>
-          <li><Link className="lolo" to="#"><i className="icon fa fa-heart"></i>Wishlist</Link></li>
-          <li><Link className="lolo" to="#"><i className="icon fa fa-shopping-cart"></i>My Cart</Link></li>
-          <li><Link className="lolo" to="#"><i className="icon fa fa-check"></i>Checkout</Link></li>
-          <li><Link className="lolo" to="#"><i className="icon fa fa-lock"></i>Login</Link></li>
+          <li><Link className="lolo" to="my-wishlist"><i className="icon fa fa-heart"></i>Wishlist</Link></li>
+          <li><Link className="lolo" to="/cart"><i className="icon fa fa-shopping-cart"></i>My Cart</Link></li>
+          <li><Link className="lolo" to="/checkout"><i className="icon fa fa-check"></i>Checkout</Link></li>
+          <li><Link className="lolo" to="/signin"><i className="icon fa fa-lock"></i>Login</Link></li>
         </ul>
       </div>
 
@@ -66,7 +66,7 @@ const NavBar = () => {
     <div className="row">
       <div className="col-xs-12 col-sm-12 col-md-3 logo-holder">
 
-        <div className="logo"> <Link className="lolo" to="home.html"> <img src="assets/images/logo.png" alt="logo" /> </Link> </div>
+        <div className="logo"> <Link className="lolo" to="/"> <img src="assets/images/logo.png" alt="logo" /> </Link> </div>
 
 </div>
         <div className="col-xs-12 col-sm-12 col-md-7 top-search-holder">
@@ -75,13 +75,13 @@ const NavBar = () => {
             <form>
               <div className="control-group">
                 <ul className="categories-filter animate-dropdown">
-                  <li className="dropdown"> <Link className="dropdown-toggle  lolo" data-toggle="dropdown" to="category.html">Categories <b className="caret"></b></Link>
+                  <li className="dropdown"> <Link className="dropdown-toggle  lolo" data-toggle="dropdown" to="">Categories <b className="caret"></b></Link>
                     <ul className="dropdown-menu" role="menu" >
-                      <li className="menu-header">Computer</li>
-                      <li role="presentation"><Link className="lolo" role="menuitem" tabIndex="-1" to="category.html">- Clothing</Link></li>
-                      <li role="presentation"><Link className="lolo" role="menuitem" tabIndex="-1" to="category.html">- Electronics</Link></li>
-                      <li role="presentation"><Link className="lolo" role="menuitem" tabIndex="-1" to="category.html">- Shoes</Link></li>
-                      <li role="presentation"><Link className="lolo" role="menuitem" tabIndex="-1" to="category.html">- Watches</Link></li>
+                      <li className="menu-header">Categories</li>
+                      <li role="presentation"><Link className="lolo" role="menuitem" tabIndex="-1" to="">- Clothing</Link></li>
+                      <li role="presentation"><Link className="lolo" role="menuitem" tabIndex="-1" to="">- Electronics</Link></li>
+                      <li role="presentation"><Link className="lolo" role="menuitem" tabIndex="-1" to="">- Shoes</Link></li>
+                      <li role="presentation"><Link className="lolo" role="menuitem" tabIndex="-1" to="">- Watches</Link></li>
                     </ul>
                   </li>
                 </ul>
@@ -115,13 +115,13 @@ const NavBar = () => {
                   </div>
 
                   <div className="clearfix"></div>
-                  <div>
+                  <hr />
                     <div className="clearfix cart-total">
                       <div className="pull-right"> <span className="text">Sub Total :</span><span className='price'>$600.00</span> </div>
                       <div className="clearfix"></div>
-                      <Link  to="checkout.html" className="btn btn-upper lolo btn-primary btn-block m-t-20">Checkout</Link> </div>
+                      <Link  to="/checkout" className="btn btn-upper lolo btn-primary btn-block m-t-20">Checkout</Link> </div>
            
-                      </div>
+                     
                 </li>
               </ul>
 
@@ -150,7 +150,7 @@ const NavBar = () => {
         <div className="navbar-collapse collapse" id="mc-horizontal-menu-collapse">
           <div className="nav-outer">
             <ul className="nav navbar-nav">
-              <li className="active dropdown yamm-fw"> <Link to="home.html" data-hover="dropdown" className="dropdown-toggle lolo" data-toggle="dropdown">Home</Link> </li>
+              <li className="active dropdown yamm-fw"> <Link to="/" data-hover="dropdown" className="dropdown-toggle lolo" data-toggle="dropdown">Home</Link> </li>
               <li className="dropdown yamm mega-menu"> <Link to="home.html" data-hover="dropdown" className="dropdown-toggle lolo" data-toggle="dropdown">Clothing</Link>
                 <ul className="dropdown-menu container">
                   <li>
@@ -310,21 +310,21 @@ const NavBar = () => {
                       <div className="row">
                         <div className="col-xs-12 col-menu">
                           <ul className="links">
-                            <li><Link className="lolo" to="home.html">Home</Link></li>
-                            <li><Link className="lolo" to="category.html">Category</Link></li>
+                            <li><Link className="lolo" to="/">Home</Link></li>
+                            <li><Link className="lolo" to="/category">Category</Link></li>
                             <li><Link className="lolo" to="detail.html">Detail</Link></li>
-                            <li><Link className="lolo" to="shopping-cart.html">Shopping Cart Summary</Link></li>
-                            <li><Link className="lolo" to="checkout.html">Checkout</Link></li>
-                            <li><Link className="lolo" to="blog.html">Blog</Link></li>
-                            <li><Link className="lolo" to="blog-details.html">Blog Detail</Link></li>
-                            <li><Link className="lolo" to="contact.html">Contact</Link></li>
-                            <li><Link className="lolo" to="sign-in.html">Sign In</Link></li>
-                            <li><Link className="lolo" to="my-wishlist.html">Wishlist</Link></li>
-                            <li><Link className="lolo" to="terms-conditions.html">Terms and Condition</Link></li>
-                            <li><Link className="lolo" to="track-orders.html">Track Orders</Link></li>
-                            <li><Link className="lolo" to="product-comparison.html">Product-Comparison</Link></li>
-                            <li><Link className="lolo" to="faq.html">FAQ</Link></li>
-                            <li><Link className="lolo" to="404.html">404</Link></li>
+                            <li><Link className="lolo" to="/cart">Shopping Cart Summary</Link></li>
+                            <li><Link className="lolo" to="/checkout">Checkout</Link></li>
+                            <li><Link className="lolo" to="/blog">Blog</Link></li>
+                            <li><Link className="lolo" to="/blog-details">Blog Detail</Link></li>
+                            <li><Link className="lolo" to="/contact">Contact</Link></li>
+                            <li><Link className="lolo" to="/signin">Sign In</Link></li>
+                            <li><Link className="lolo" to="/my-wishlist">Wishlist</Link></li>
+                            <li><Link className="lolo" to="/policy">Terms and Condition</Link></li>
+                            <li><Link className="lolo" to="/trackorder">Track Orders</Link></li>
+                            <li><Link className="lolo" to="/comparision">Product-Comparison</Link></li>
+                            <li><Link className="lolo" to="/faq">FAQ</Link></li>
+                            <li><Link className="lolo" to="*">404</Link></li>
                           </ul>
                         </div>
                       </div>

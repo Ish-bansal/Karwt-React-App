@@ -7,7 +7,7 @@ const ScrolsTabsProductdata = [
         dprice: "$600.00"
     },
     {
-        imgsrc:"assets/images/products/p5.jpg",
+        imgsrc:"assets/images/products/p9.jpg",
         tag: "sale",
         pname:"Floral Print Buttoned",
         oprice : "$800.00",
