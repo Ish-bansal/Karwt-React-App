@@ -4,7 +4,7 @@ import "./App.css"
 import {BrowserRouter,Route,Switch} from 'react-router-dom'
 import Footer from './compnonents/Footer'
 import Home from './compnonents/screens/Home'
-import Sign from './compnonents/sign';
+import Sign from './compnonents/Sign';
 import Trackorders from './compnonents/Trackorders';
 import Error from './compnonents/screens/404';
 import Checkout from './compnonents/screens/Checkout';
@@ -16,6 +16,8 @@ import Policy from './compnonents/screens/Policy';
 import Blog from './compnonents/screens/homecomponent/Blog';
 import NNavBar from './compnonents/screens/NNavbar';
 import ProductComparision from './compnonents/ProductComparision';
+import Detail from './compnonents/screens/Detail/Detail';
+import Category from './compnonents/screens/category/Category';
 
 
 
@@ -38,6 +40,14 @@ const Routing = ()=>{
       
       <Route  path="/checkout" >
         <Checkout />
+      </Route>
+
+      <Route  path="/detail" >
+        <Detail />
+      </Route>
+
+      <Route  path="/category" >
+        <Category />
       </Route>
 
       <Route  path="/cart" >

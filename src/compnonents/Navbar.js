@@ -312,7 +312,7 @@ const NavBar = () => {
                           <ul className="links">
                             <li><Link className="lolo" to="/">Home</Link></li>
                             <li><Link className="lolo" to="/category">Category</Link></li>
-                            <li><Link className="lolo" to="detail.html">Detail</Link></li>
+                            <li><Link className="lolo" to="/detail">Detail</Link></li>
                             <li><Link className="lolo" to="/cart">Shopping Cart Summary</Link></li>
                             <li><Link className="lolo" to="/checkout">Checkout</Link></li>
                             <li><Link className="lolo" to="/blog">Blog</Link></li>
